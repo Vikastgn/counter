@@ -1,0 +1,70 @@
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Центрирование по вертикали */
+    background-color: #515157; /* Фон */
+}
+
+.counter-box {
+    border: 5px solid #007bff; /* Рамка */
+    border-radius: 10px; /* Закругление углов */
+    padding: 20px; /* Отступы внутри рамки */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+    display: flex; /* Flexbox для центрирования содержимого */
+    flex-direction: column; /* Вертикальное расположение содержимого */
+    align-items: center; /* Центрирование по горизонтали */
+    margin-right: 20px;
+}
+
+label {
+    margin: 5px; /* Отступы вокруг метки */
+    display: flex; /* Используем flex для горизонтального расположения */
+    align-items: center; /* Центрируем текст и поле ввода по вертикали */
+}
+
+label span {
+    margin-right: 20px; /* Отступ справа для текста */
+}
+
+.red {
+    color: #880808; /* Красный цвет текста */
+}
+
+.error-input {
+    border: 2px solid #8c1212;
+    background-color: #d95757;
+}
+
+input {
+    border: 1px solid #ccc; /* Рамка для поля ввода */
+    border-radius: 5px; /* Закругление углов */
+    width: 100px; /* Ширина */
+    text-align: center; /* Центрирование текста внутри поля ввода */
+    padding: 5px; /* Отступы */
+}
+
+.button-container {
+    display: flex; /* Горизонтальное расположение кнопок */
+    gap: 10px; /* Промежуток между кнопками */
+    margin-top: 20px
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff; /* Цвет при наведении */
+    color: white; /* Цвет текста при наведении */
+}
+
+button:disabled {
+    background-color: #ccc; /* Цвет для отключенной кнопки */
+    cursor: not-allowed; /* Изменение курсора для отключенной кнопки */
+}
